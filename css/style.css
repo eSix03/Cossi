@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    height: 950px; /*750px*/
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40;
+    align-items: center;
+}
+
+section h2{
+    font-size: 50px;
+    font-weight: 500px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+
+section p{
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: white;
+}
+
+section a{
+    display: inline-block;
+    padding: 7px 0;
+    color: brown;
+    text-decoration: none;
+    width: 100px;
+    text-align:center;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: white;
+}
+
+section img{
+    height: 60%;
+}
+
+section:nth-child(1){
+    background-image: url("../elegant2.jpg");
+}
+
+section:nth-child(2){
+    background-color: #262626;
+}
+
+section:nth-child(3){
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+@media screen and (max-width: 1000px) {
+    section{
+        flex-direction: column-reverse;
+        /*justify-content: center;*/
+    }
+
+    section > img{
+        height: 40%;
+    }
+
+    .contenedor-texto{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    section > img{
+        height: 25%;
+    }
+}
